@@ -62,10 +62,11 @@ The commit message should be structured as follows:
 - Keep the body short and concise (omit it entirely if not useful)"
   "A prompt adapted from Conventional Commits (https://www.conventionalcommits.org/en/v1.0.0/).")
 
-
 (defcustom gptel-magit-commit-prompt
   gptel-magit-prompt-conventional-commits
-  "The prompt to use for generating a commit message.")
+  "The prompt to use for generating a commit message.
+The prompt should consider that the input will be a diff of all
+staged changes.")
 
 (defun gptel-magit--format-response (message)
   "Format commit message MESSAGE nicely."
@@ -92,7 +93,6 @@ CALLBACK will be applied to the generated commit message string."
 Invokes CALLBACK with the generated message when done."
   (let ((diff (magit-git-output "diff" "--cached")))
     (gptel-magit--request diff callback)))
-
 
 (defun gptel-magit-generate-message ()
   "Generate a commit message when in the git commit buffer."
