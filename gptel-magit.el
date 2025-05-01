@@ -66,7 +66,9 @@ The commit message should be structured as follows:
   gptel-magit-prompt-conventional-commits
   "The prompt to use for generating a commit message.
 The prompt should consider that the input will be a diff of all
-staged changes.")
+staged changes."
+  :type 'string
+  :group 'gptel-magit)
 
 (defun gptel-magit--format-response (message)
   "Format commit message MESSAGE nicely."
@@ -83,7 +85,7 @@ CALLBACK will be applied to the generated commit message string."
   (gptel-request diff
     :system gptel-magit-commit-prompt
     :context nil
-    :callback (lambda (response info)
+    :callback (lambda (response _info)
                 (let ((msg (gptel-magit--format-response response)))
                   (message msg)
                   (funcall callback msg)))))
