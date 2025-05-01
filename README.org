@@ -1,13 +1,14 @@
 #+title: gptel-magit: LLM functionality for magit
 
-file:https://stable.melpa.org/packages/gptel-magit-badge.svg
-[[https://melpa.org/#/gptel][file:https://melpa.org/packages/gptel-magit-badge.svg]]
+[[https://stable.melpa.org/#/gptel-magit][file:https://stable.melpa.org/packages/gptel-magit-badge.svg]]
+[[https://melpa.org/#/gptel-magit][file:https://melpa.org/packages/gptel-magit-badge.svg]]
 
 Generate commit messages in magit using gptel.
 
-* Usage
+* Installation
 
-Install and run =gptel-magit-install= at an appropriate time, for example:
+Install the package and run =gptel-magit-install= at an appropriate
+time, for example:
 
 #+begin_src elisp
   (use-package gptel-magit
@@ -15,11 +16,14 @@ Install and run =gptel-magit-install= at an appropriate time, for example:
     :hook (magit-mode . gptel-magit-install))
 #+end_src
 
-This will add two ways of generating commit messages:
+* Usage
 
-1. In magit transient commit buffer, you can press =g= to create a
+You can generate a commit message in two ways:
+
+1. In the magit transient commit buffer, you can press =g= to create a
    commit with a pre-*g*enerated message.
-2. In a git-commit buffer, you can press =M-g= to *g*enerate a message.
+2. In a already started git-commit buffer, you can press =M-g= to
+   *g*enerate a message.
 
 * Customisation
 
