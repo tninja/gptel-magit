@@ -5,7 +5,7 @@
 
 ;; Author: Ragnar Dahlén <r.dahlen@gmail.com>
 ;; Version: 1.0
-;; Package-Requires: ((emacs "28.1") (magit "1.0") (gptel "1.0"))
+;; Package-Requires: ((emacs "28.1") (magit "4.0") (gptel "0.9.8"))
 ;; Keywords: vc, convenience
 ;; URL: https://github.com/ragnard/gptel-magit
 
