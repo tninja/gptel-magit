@@ -117,7 +117,7 @@ Uses ARGS from transient mode."
 
 (defun gptel-magit-install ()
   "Install gptel-magit functionality."
-  (define-key git-commit-mode-map (kbd "C-c C-m") 'gptel-magit-generate-message)
+  (define-key git-commit-mode-map (kbd "M-g") 'gptel-magit-generate-message)
   (transient-append-suffix 'magit-commit #'magit-commit-create
     '("g" "Generate commit" gptel-magit-commit-generate)))
 
