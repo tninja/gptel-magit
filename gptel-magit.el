@@ -117,6 +117,7 @@ Uses ARGS from transient mode."
      (magit-commit-create (append args `("--message" ,message "--edit")))))
   (message "magit-gptel: Generating commit..."))
 
+;;;###autoload
 (defun gptel-magit-install ()
   "Install gptel-magit functionality."
   (define-key git-commit-mode-map (kbd "M-g") 'gptel-magit-generate-message)
