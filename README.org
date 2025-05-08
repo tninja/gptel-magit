@@ -1,7 +1,7 @@
 #+title: gptel-magit: LLM functionality for magit
 
-[[https://stable.melpa.org/#/gptel-magit][file:https://stable.melpa.org/packages/gptel-magit-badge.svg]]
-[[https://melpa.org/#/gptel-magit][file:https://melpa.org/packages/gptel-magit-badge.svg]]
+[[https://stable.melpa.org/#/gptel-magit][https://stable.melpa.org/packages/gptel-magit-badge.svg]]
+[[https://melpa.org/#/gptel-magit][https://melpa.org/packages/gptel-magit-badge.svg]]
 
 Generate commit messages in magit using gptel.
 
